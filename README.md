@@ -15,6 +15,8 @@ install wordpress
     https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-debian-9
 
     https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose
+    
+    https://codingwithmanny.medium.com/custom-wordpress-docker-setup-8851e98e6b8
 
 install mysql(mariadb)
 
