@@ -31,3 +31,7 @@ install mysql(mariadb)
               https://stackoverflow.com/questions/16747035/how-do-i-create-a-user-with-the-same-privileges-as-root-in-mysql-mariadb
 
               https://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/
+              
+install PHP 7 fpm on Alpine Linux
+    
+    https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/
