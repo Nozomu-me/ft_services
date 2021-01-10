@@ -35,3 +35,8 @@ install mysql(mariadb)
 install PHP 7 fpm on Alpine Linux
     
     https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/
+    
+ 
+enable and start services on Alpine Linux
+
+    https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/
