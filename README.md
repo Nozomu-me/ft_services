@@ -40,3 +40,11 @@ install PHP 7 fpm on Alpine Linux
 enable and start services on Alpine Linux
 
     https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/
+ 
+Install phpmyadmin
+    
+    https://www.digitalocean.com/community/tutorials/how-to-install-phpmyadmin-from-source-debian-10
+    
+    https://docs.rackspace.com/support/how-to/install-and-configure-phpmyadmin/
+    
+    
