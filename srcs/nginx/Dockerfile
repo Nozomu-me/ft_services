@@ -5,6 +5,7 @@ RUN apk add nginx
 RUN apk add openrc
 RUN mkdir /run/openrc
 RUN touch run/openrc/softlevel
+RUN openrc
 # version 1
 # RUN mkdir /run/nginx
 # COPY default.conf /etc/nginx/conf.d/
