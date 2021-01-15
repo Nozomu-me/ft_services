@@ -43,9 +43,3 @@ spec:
     #   protocol: TCP
     #   port: 22
     #   targetPort: 22
-  # ports:
-  # - port: 80
-  #   protocol: TCP
-  #   targetPort: 80
-  #   targetPort: 443
-  #   targetPort: 22

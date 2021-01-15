@@ -1,58 +1,49 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wordpress-mysql
-  labels:
-    app: wordpress
+  name: mysql-service
 spec:
+  selector:
+    app: mysql
+  type: ClusterIP
   ports:
     - port: 3306
-  selector:
-    app: wordpress
-    tier: mysql
-  clusterIP: None
+      name: mysql
+      protocol: TCP
+      targetPort: 3306
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
   labels:
-    app: wordpress
+    app: mysql
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 20Gi
+      storage: 2Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wordpress-mysql
+  name: mysql-deployment
   labels:
-    app: wordpress
+    app: mysql
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: wordpress
-      tier: mysql
-  strategy:
-    type: Recreate
+      app: mysql
   template:
     metadata:
       labels:
-        app: wordpress
-        tier: mysql
+        app: mysql
     spec:
       containers:
-      - image: mysql:5.6
-        name: mysql
-        env:
-        - name: MYSQL_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password
+      - name: mysql
+        image: mysql
         ports:
         - containerPort: 3306
           name: mysql
