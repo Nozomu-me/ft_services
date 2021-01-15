@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest #nginx:1.16.1 # Update the version of nginx from 1.14.2 to 1.16.1
+        image: nginx #nginx:1.16.1 # Update the version of nginx from 1.14.2 to 1.16.1
         ports:
         - containerPort: 80
         - containerPort: 443
@@ -29,9 +29,23 @@ metadata:
 spec:
   selector:
     app: nginx
+  type: LoadBalancer
   ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
-    targetPort: 443
-    targetPort: 22
+    - port: 80
+      name: http
+      protocol: TCP
+      targetPort: 80
+    - port: 443
+      name: https
+      protocol: TCP
+      targetPort: 443
+    # - name:
+    #   protocol: TCP
+    #   port: 22
+    #   targetPort: 22
+  # ports:
+  # - port: 80
+  #   protocol: TCP
+  #   targetPort: 80
+  #   targetPort: 443
+  #   targetPort: 22
