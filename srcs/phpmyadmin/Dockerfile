@@ -26,6 +26,7 @@ RUN rm phpMyAdmin-5.0.4-all-languages.tar.gz
 COPY config.sample.inc.php /www/phpmyadmin
 RUN mv /www/phpmyadmin/config.sample.inc.php /www/phpmyadmin/config.inc.php
 COPY nginx.conf /etc/nginx/
+
 # RUN rc-status
 # RUN rc-service nginx start
 # RUN rc-service php-fpm7 start
