@@ -26,7 +26,7 @@ https://wiki.alpinelinux.org/wiki/Mysql
 
 https://wiki.alpinelinux.org/wiki/Production_DataBases_:_mysql
 
-        Create MySQL Users Accounts and Grant Privileges
+Create MySQL Users Accounts and Grant Privileges
     
 https://stackoverflow.com/questions/16747035/how-do-i-create-a-user-with-the-same-privileges-as-root-in-mysql-mariadb
 
@@ -47,4 +47,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-phpmyadmin-from-
     
 https://docs.rackspace.com/support/how-to/install-and-configure-phpmyadmin/
     
-    
+
+Install metallb
+
+https://blog.tekspace.io/setup-kubernetes-cluster-using-k3s-metallb-letsencrypt-on-bare-metal/
+
+https://asergo.com/knowledge-base/kubernetes/private-managed-cluster/load-balancer.html#layer-2-arp-ndp
