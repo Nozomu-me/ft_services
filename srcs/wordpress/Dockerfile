@@ -26,5 +26,10 @@ RUN mv wordpress /www
 COPY wp-config-sample.php /www/wordpress
 RUN mv /www/wordpress/wp-config-sample.php /www/wordpress/wp-config.php
 
+# install supervisord
+RUN apk --update add supervisor
+COPY supervisord.conf /etc
+CMD ["/usr/bin/supervisord", "-n"]
+
 EXPOSE 5050
 # CMD ["/bin/sh", "-c", "nginx -g 'daemon off;'; nginx -s reload;"]

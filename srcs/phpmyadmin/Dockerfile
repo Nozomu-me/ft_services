@@ -27,6 +27,11 @@ COPY config.sample.inc.php /www/phpmyadmin
 RUN mv /www/phpmyadmin/config.sample.inc.php /www/phpmyadmin/config.inc.php
 COPY nginx.conf /etc/nginx/
 
+# install supervisord
+RUN apk --update add supervisor
+COPY supervisord.conf /etc
+CMD ["/usr/bin/supervisord", "-n"]
+
 # RUN rc-status
 # RUN rc-service nginx start
 # RUN rc-service php-fpm7 start
