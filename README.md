@@ -54,6 +54,12 @@ https://blog.tekspace.io/setup-kubernetes-cluster-using-k3s-metallb-letsencrypt-
 
 https://asergo.com/knowledge-base/kubernetes/private-managed-cluster/load-balancer.html#layer-2-arp-ndp
 
+# Setup supervisord
+
+https://dataandtechnology.wordpress.com/2018/08/14/using-supervisor-with-docker/
+
+https://stackoverflow.com/questions/37313780/how-can-i-start-php-fpm-in-a-docker-container-by-default
+
 
 # Error sources
 
