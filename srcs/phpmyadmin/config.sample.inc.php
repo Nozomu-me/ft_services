@@ -89,7 +89,7 @@ $cfg['Servers'][$i]['export_templates'] = 'pma__export_templates';
  */
 $cfg['UploadDir'] = '';
 $cfg['SaveDir'] = '';
-$cfg['TempDir'] = '/var/lib/phpmyadmin/tmp';
+$cfg['TempDir'] = '/tmp';
 /**
  * Whether to display icons or text or both icons and text in table row
  * action segment. Value can be either of 'icons', 'text' or 'both'.
