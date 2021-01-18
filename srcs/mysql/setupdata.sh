@@ -14,4 +14,4 @@ mysql -uroot -e "GRANT ALL ON wordpress_db.* TO 'amal'@'%'"
 mysql -uroot -e "FLUSH PRIVILEGES;"
 mysql -uroot -D wordpress_db < /tmp/wordpress_db.sql
 
-tail -F /dev/null
+# tail -F /dev/null

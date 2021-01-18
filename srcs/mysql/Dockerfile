@@ -10,4 +10,9 @@ COPY wordpress_db.sql /tmp
 COPY create_tables.sql /tmp
 CMD sh /tmp/setupdata.sh
 
+# install supervisord
+RUN apk --update add supervisor
+COPY supervisord.conf /etc
+CMD ["/usr/bin/supervisord", "-n"]
+
 EXPOSE 3306
