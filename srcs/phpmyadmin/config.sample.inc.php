@@ -53,8 +53,8 @@ $cfg['Servers'][$i]['controluser']   = 'amal';          // MySQL control user se
                                                     // (this user must have read-only
 $cfg['Servers'][$i]['controlpass']   = 'amal';          // access to the "mysql/user"
                                                     // and "mysql/db" tables).
-// $cfg['Servers'][$i]['controlhost'] = '';
-// $cfg['Servers'][$i]['controlport'] = '';
+$cfg['Servers'][$i]['controlhost'] = '';
+$cfg['Servers'][$i]['controlport'] = '';
 // $cfg['Servers'][$i]['controluser'] = 'pma';
 // $cfg['Servers'][$i]['controlpass'] = 'pmapass';
 
