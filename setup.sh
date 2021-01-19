@@ -1,7 +1,7 @@
 minikube stop
 minikube delete
 minikube start
-eval $(minikube docker-env)
+eval $(minikube -p minikube docker-env)
 docker build -t im_nginx srcs/nginx 
 docker build -t im_phpmyadmin srcs/phpmyadmin
 docker build -t im_wordpress srcs/wordpress
