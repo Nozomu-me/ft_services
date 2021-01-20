@@ -3,16 +3,17 @@ RUN apk update
 RUN apk upgrade
 RUN apk add mysql mysql-client
 RUN apk add openrc
+RUN apk --update add supervisor
 RUN openrc
 RUN touch run/openrc/softlevel
+
 COPY setupdata.sh /tmp
 COPY wordpress_db.sql /tmp
 COPY create_tables.sql /tmp
-CMD sh /tmp/setupdata.sh
+COPY supervisord.conf /etc
 
 # install supervisord
-RUN apk --update add supervisor
-COPY supervisord.conf /etc
-CMD ["/usr/bin/supervisord", "-n"]
+CMD sh /tmp/setupdata.sh
+# CMD ["/usr/bin/supervisord", "-n"]
 
 EXPOSE 3306

@@ -55,8 +55,6 @@ $cfg['Servers'][$i]['controlpass']   = 'amal';          // access to the "mysql/
                                                     // and "mysql/db" tables).
 $cfg['Servers'][$i]['controlhost'] = '';
 $cfg['Servers'][$i]['controlport'] = '';
-// $cfg['Servers'][$i]['controluser'] = 'pma';
-// $cfg['Servers'][$i]['controlpass'] = 'pmapass';
 
 /* Storage database and tables */
 $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';

@@ -11,13 +11,13 @@ spec:
   ports:
     - port: 3306
       name: mysql
-      protocol: TCP
-      targetPort: 3306
+      # protocol: TCP
+      # targetPort: 3306
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql
+  name: mysql-storage
   labels:
     app: mysql
 spec:
@@ -51,9 +51,9 @@ spec:
         - containerPort: 3306
           name: mysql
         volumeMounts:
-        - name: mysql
+        - name: var-lib-mysql
           mountPath: /var/lib/mysql
       volumes:
-      - name: mysql
+      - name: var-lib-mysql
         persistentVolumeClaim:
-          claimName: mysql
+          claimName: mysql-storage
