@@ -12,8 +12,6 @@ COPY wordpress_db.sql /tmp
 COPY create_tables.sql /tmp
 COPY supervisord.conf /etc
 
-# install supervisord
 CMD sh /tmp/setupdata.sh
-# CMD ["/usr/bin/supervisord", "-n"]
 
 EXPOSE 3306

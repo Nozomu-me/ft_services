@@ -1,10 +1,12 @@
+#! /bin/sh
+
 minikube stop
 minikube delete
 minikube start
 eval $(minikube -p minikube docker-env)
 # docker build -t im_nginx srcs/nginx 
-docker build -t im_phpmyadmin srcs/phpmyadmin
-# docker build -t im_wordpress srcs/wordpress
+# docker build -t im_phpmyadmin srcs/phpmyadmin
+docker build -t im_wordpress srcs/wordpress
 docker build -t im_mysql srcs/mysql
 
 # #install metallb
@@ -14,8 +16,8 @@ kubectl create secret generic -n metallb-system memberlist --from-literal=secret
 kubectl apply -f srcs/metallb.yaml
 
 # kubectl apply -f srcs/nginx/nginx.yaml 
-kubectl apply -f srcs/phpmyadmin/phpmyadmin.yaml 
-# kubectl apply -f srcs/wordpress/wordpress.yaml 
+# kubectl apply -f srcs/phpmyadmin/phpmyadmin.yaml 
+kubectl apply -f srcs/wordpress/wordpress.yaml 
 kubectl apply -f srcs/mysql/mysql.yaml 
 
 # kubectl delete -f srcs/nginx/nginx.yaml 
