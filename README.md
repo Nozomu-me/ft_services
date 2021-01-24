@@ -65,6 +65,13 @@ https://stackoverflow.com/questions/37313780/how-can-i-start-php-fpm-in-a-docker
 
 https://stackoverflow.com/questions/56392041/getting-errimageneverpull-in-pods
 
+* manage reverse proxy:
+
+https://stackoverflow.com/questions/32542282/how-do-i-rewrite-urls-in-a-proxy-response-in-nginx
+
+https://gist.github.com/soheilhy/8b94347ff8336d971ad0
+
+https://serverfault.com/questions/433785/nginx-phpmyadmin-redirecting-to-instead-of-phpmyadmin-upon-login
 
 # Kubernetes setup
 
