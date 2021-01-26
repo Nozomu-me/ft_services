@@ -34,7 +34,7 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 // $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
 
-$cfg['PmaAbsoluteUri'] = '/';
+// $cfg['PmaAbsoluteUri'] = '/';
 /**
  * phpMyAdmin configuration storage settings.
  */

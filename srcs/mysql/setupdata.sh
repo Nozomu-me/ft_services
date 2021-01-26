@@ -12,7 +12,6 @@ mysql -u root -e "CREATE DATABASE wordpress_db;"
 mysql -u root -e "GRANT ALL ON wordpress_db.* TO 'amal'@'%';"
 mysql -u root -e "FLUSH PRIVILEGES;"
 mysql -u root -D wordpress_db < /tmp/wordpress_db.sql
-service mariadb stop
 sed -i 's/skip-networking/# skip-networking/g' /etc/my.cnf.d/mariadb-server.cnf
 service mariadb restart
 supervisord -c /etc/supervisord.conf
