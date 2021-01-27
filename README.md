@@ -57,6 +57,7 @@ https://superuser.com/questions/801407/error-the-data-connection-could-not-be-es
 
 https://stackoverflow.com/questions/49955097/how-do-i-add-a-user-when-im-using-alpine-as-a-base-image
 
+https://stackoverflow.com/questions/46229315/how-to-run-crond-and-vsftpd-on-alpine-linux-docker-container
 
 # Install metallb
 
