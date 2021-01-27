@@ -47,6 +47,17 @@ https://www.digitalocean.com/community/tutorials/how-to-install-phpmyadmin-from-
     
 https://docs.rackspace.com/support/how-to/install-and-configure-phpmyadmin/
     
+# Install vsftpd (ftps)
+
+https://xennis.org/wiki/Web_server_-_FTP_setup
+
+https://www.commentcamarche.net/faq/5976-changer-le-mot-de-passe-via-un-script
+
+https://superuser.com/questions/801407/error-the-data-connection-could-not-be-established-econnrefused-connection-r
+
+https://stackoverflow.com/questions/49955097/how-do-i-add-a-user-when-im-using-alpine-as-a-base-image
+
+https://stackoverflow.com/questions/46229315/how-to-run-crond-and-vsftpd-on-alpine-linux-docker-container
 
 # Install metallb
 
@@ -60,6 +71,7 @@ https://dataandtechnology.wordpress.com/2018/08/14/using-supervisor-with-docker/
 
 https://stackoverflow.com/questions/37313780/how-can-i-start-php-fpm-in-a-docker-container-by-default
 
+https://medium.com/@joor.loohuis/using-supervisor-for-process-management-66a5cc3d3dfa
 
 # Error sources
 
