@@ -20,4 +20,7 @@ RUN apk --update add supervisor
 COPY supervisord.conf /etc
 CMD ["/usr/bin/supervisord", "-n"]
 
+# Install telegraf
+RUN apk add telegraf --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
+
 EXPOSE 21 30000

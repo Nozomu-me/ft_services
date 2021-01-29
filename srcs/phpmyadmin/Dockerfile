@@ -29,6 +29,9 @@ RUN rm phpMyAdmin-5.0.4-all-languages.tar.gz
 COPY config.sample.inc.php /www/phpmyadmin
 RUN mv /www/phpmyadmin/config.sample.inc.php /www/phpmyadmin/config.inc.php
 
+# Install telegraf
+RUN apk add telegraf --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
+
 # install supervisord
 RUN apk --update add supervisor
 COPY supervisord.conf /etc
