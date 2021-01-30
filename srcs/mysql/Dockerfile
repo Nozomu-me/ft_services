@@ -9,13 +9,12 @@ RUN touch run/openrc/softlevel
 COPY setupdata.sh /tmp
 COPY wordpress_db.sql /tmp
 COPY create_tables.sql /tmp
-COPY supervisord.conf /etc
-COPY telegraf.conf /etc
 
 # Install telegraf
 RUN apk add telegraf --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
+COPY telegraf.conf /etc
 
-# install supervisord
+# Install supervisord
 RUN apk --update add supervisor
 COPY supervisord.conf /etc
 
