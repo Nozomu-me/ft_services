@@ -13,7 +13,7 @@ RUN apk add openssl
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem -subj "/C=MA/ST=Khouribga/L=Khouribga/O=1337/CN=Amouassi"
 
 RUN adduser -D amal
-RUN echo -e "amal" | (passwd -d amal)
+RUN echo -e "amal:amal" | chpasswd
 
 # Install supervisord
 RUN apk --update add supervisor

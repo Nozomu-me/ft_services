@@ -30,6 +30,7 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private
 RUN adduser amal -D 
 RUN echo -e "amal:amal" | chpasswd
 RUN ssh-keygen -A
+
 # Install telegraf
 RUN apk add telegraf --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
 COPY telegraf.conf /etc
