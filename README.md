@@ -75,7 +75,11 @@ https://grafana.com/docs/grafana/latest/installation/debian/
 
 https://grafana.com/docs/grafana/latest/datasources/influxdb/
 
-https://medium.com/xebia-engineering/container-and-system-monitoring-with-docker-telegraf-influxdb-and-grafana-on-aws-2007e5511746
+https://medium.com/xebia-engineering/container-and-system-monitoring-with-docker-telegraf-influxdb-and-grafana-on-aws-2007e5511746
+
+# Install and setup ssh
+
+https://dev.to/s1ntaxe770r/how-to-setup-ssh-within-a-docker-container-i5i
 
 # Setup supervisord
 
@@ -112,3 +116,7 @@ One liner to stop / remove all of Docker containers:
 
         docker stop $(docker ps -a -q)
         docker rm $(docker ps -a -q)
+        
+test ssh
+
+    ssh [user]@[ip-adress] -p [port]
