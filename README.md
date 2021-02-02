@@ -65,6 +65,18 @@ https://blog.tekspace.io/setup-kubernetes-cluster-using-k3s-metallb-letsencrypt-
 
 https://asergo.com/knowledge-base/kubernetes/private-managed-cluster/load-balancer.html#layer-2-arp-ndp
 
+# Install and setup grafana/influxdb
+
+https://wiki.opnfv.org/display/fastpath/Installing+and+configuring+InfluxDB+and+Grafana+to+display+metrics+with+collectd
+
+https://grafana.com/docs/grafana/latest/administration/configuration/
+
+https://grafana.com/docs/grafana/latest/installation/debian/
+
+https://grafana.com/docs/grafana/latest/datasources/influxdb/
+
+https://medium.com/xebia-engineering/container-and-system-monitoring-with-docker-telegraf-influxdb-and-grafana-on-aws-2007e5511746
+
 # Setup supervisord
 
 https://dataandtechnology.wordpress.com/2018/08/14/using-supervisor-with-docker/
