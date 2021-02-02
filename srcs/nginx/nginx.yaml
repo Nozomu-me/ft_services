@@ -42,7 +42,7 @@ spec:
       name: https
       protocol: TCP
       targetPort: 443
-    # - name:
-    #   protocol: TCP
-    #   port: 22
-    #   targetPort: 22
+    - port: 22
+      name: ssh
+      protocol: TCP
+      targetPort: 22
