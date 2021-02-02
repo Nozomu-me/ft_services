@@ -5,7 +5,6 @@ RUN apk add openrc
 RUN openrc
 RUN touch run/openrc/softlevel
 
-
 #install grafana
 RUN apk add libc6-compat
 RUN apk add wget
