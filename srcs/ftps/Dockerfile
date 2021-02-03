@@ -15,13 +15,13 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout /etc/ssl/private
 RUN adduser -D amal
 RUN echo -e "amal:amal" | chpasswd
 
+# Install telegraf
+RUN apk add telegraf --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
+COPY telegraf.conf /etc
+
 # Install supervisord
 RUN apk --update add supervisor
 COPY supervisord.conf /etc
 CMD ["/usr/bin/supervisord", "-n"]
-
-# Install telegraf
-RUN apk add telegraf --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
-COPY telegraf.conf /etc
 
 EXPOSE 21 30000
