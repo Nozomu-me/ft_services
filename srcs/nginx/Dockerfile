@@ -6,16 +6,8 @@ RUN openrc
 RUN touch run/openrc/softlevel
 RUN apk add openssh
 
-# version 1
-# COPY default.conf /etc/nginx/conf.d/
-# COPY index.html /var/www/localhost/htdocs
-
 # install nginx
 RUN apk add nginx
-# RUN adduser -D -g 'www' www
-# RUN mkdir /www
-# RUN chown -R www:www /var/lib/nginx
-# RUN chown -R www:www /www
 RUN mkdir /run/nginx
 
 COPY nginx.conf /etc/nginx/
